@@ -19,6 +19,13 @@ namespace Mausam
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            //database
+            services.AddSingleton<MongoDbContext>(sp =>
+            {
+                var configuration = sp.GetRequiredService<IConfiguration>();
+                return new MongoDbContext(configuration);
+            });
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
