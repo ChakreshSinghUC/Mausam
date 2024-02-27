@@ -6,6 +6,7 @@ namespace Mausam
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
+    using Mausam.DataAccess;
 
     public class Startup
     {

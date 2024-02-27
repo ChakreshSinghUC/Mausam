@@ -15,7 +15,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\..\Startup.cs" />
-    <!-- ... (other files) -->
+	<Compile Include="..\..\DataAccess\*.cs" />
+	  <!-- ... (other files) -->
   </ItemGroup>
 
 </Project>

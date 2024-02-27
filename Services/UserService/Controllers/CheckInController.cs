@@ -9,7 +9,7 @@
     {
         private readonly MongoDbContext _dbContext;
 
-        public UserController(MongoDbContext dbContext)
+        public CheckInController(MongoDbContext dbContext)
         {
             _dbContext = dbContext;
         }
