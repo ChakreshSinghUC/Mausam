@@ -12,6 +12,7 @@
         public CheckInController(MongoDbContext dbContext)
         {
             _dbContext = dbContext;
+            //testing
         }
 
         [HttpPost("{userId}")]
