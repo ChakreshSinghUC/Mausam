@@ -7,6 +7,8 @@ namespace Mausam
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
     using Mausam.DataAccess;
+    using Mausam.Services.UserService;
+    using Mausam.Services.UserService.Interfaces;
 
     public class Startup
     {
@@ -27,6 +29,8 @@ namespace Mausam
                 var configuration = sp.GetRequiredService<IConfiguration>();
                 return new MongoDbContext(configuration);
             });
+
+           services.AddScoped<IUserCheckin, UserCheckin>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

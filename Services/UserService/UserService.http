@@ -8,3 +8,46 @@ GET {{UserService_HostAddress}}/api/checkin
 Accept: application/json
 
 ###
+
+POST {{UserService_HostAddress}}/api/users/register
+Content-Type: application/json
+Accept: application/json
+
+{
+  "username": "example",
+  "email": "example@example.com",
+  "loginPassword": "securepassword"
+}
+
+
+###
+POST {{UserService_HostAddress}}/api/users/login
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": "123",
+  "username": "example",
+  "email": "example@example.com",
+  "loginIdentifier": "example@example.com",
+  "loginPassword": "securepassword"
+}
+
+
+###
+POST {{UserService_HostAddress}}/api/users/forgot-password
+Content-Type: application/json
+Accept: application/json
+
+{
+  "resetEmail": "example@example.com"
+}
+
+###
+POST {{UserService_HostAddress}}/api/users/google-login
+Content-Type: application/json
+Accept: application/json
+
+{
+  "googleAccessToken": "your_google_access_token"
+}
