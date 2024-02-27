@@ -1,10 +1,8 @@
-﻿
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Hosting;
-using Mausam;
-
-namespace UserService
+﻿namespace Mausam.UserService
 {
+
+    using Microsoft.AspNetCore.Hosting;
+    using Microsoft.Extensions.Hosting; 
     public class Program
     {
         public static void Main(string[] args)

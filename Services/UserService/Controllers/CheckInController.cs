@@ -1,7 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
-
-namespace UserService.Controllers
+﻿namespace Mausam.UserService.Controllers
 {
+    using Microsoft.AspNetCore.Mvc;
+
     [ApiController]
     [Route("api/checkin")]
     public class CheckInController : ControllerBase

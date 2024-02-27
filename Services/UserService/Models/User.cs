@@ -1,4 +1,4 @@
-﻿namespace UserService.Models
+﻿namespace Mausam.UserService.Models
 {
     public class User
     {
