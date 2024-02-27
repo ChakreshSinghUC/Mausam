@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\mygitrepos\\Mausam\\UserService2\\UserService.csproj": {}
+    "D:\\mygitrepos\\Mausam\\UserService\\UserService.csproj": {}
   },
   "projects": {
-    "D:\\mygitrepos\\Mausam\\UserService2\\UserService.csproj": {
+    "D:\\mygitrepos\\Mausam\\UserService\\UserService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\mygitrepos\\Mausam\\UserService2\\UserService.csproj",
+        "projectUniqueName": "D:\\mygitrepos\\Mausam\\UserService\\UserService.csproj",
         "projectName": "UserService",
-        "projectPath": "D:\\mygitrepos\\Mausam\\UserService2\\UserService.csproj",
+        "projectPath": "D:\\mygitrepos\\Mausam\\UserService\\UserService.csproj",
         "packagesPath": "C:\\Users\\singh\\.nuget\\packages\\",
-        "outputPath": "D:\\mygitrepos\\Mausam\\UserService2\\obj\\",
+        "outputPath": "D:\\mygitrepos\\Mausam\\UserService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\singh\\AppData\\Roaming\\NuGet\\NuGet.Config",

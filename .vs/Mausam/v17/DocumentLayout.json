@@ -3,36 +3,20 @@
   "WorkspaceRootPath": "D:\\mygitrepos\\Mausam\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{05EEC512-4615-470A-8B5E-9E179428C52D}|UserService2\\UserService.csproj|d:\\mygitrepos\\mausam\\userservice2\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{05EEC512-4615-470A-8B5E-9E179428C52D}|UserService2\\UserService.csproj|solutionrelative:userservice2\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{05EEC512-4615-470A-8B5E-9E179428C52D}|UserService\\UserService.csproj|d:\\mygitrepos\\mausam\\userservice\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{05EEC512-4615-470A-8B5E-9E179428C52D}|UserService\\UserService.csproj|solutionrelative:userservice\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05EEC512-4615-470A-8B5E-9E179428C52D}|UserService2\\UserService.csproj|d:\\mygitrepos\\mausam\\userservice2\\userservice.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{05EEC512-4615-470A-8B5E-9E179428C52D}|UserService2\\UserService.csproj|solutionrelative:userservice2\\userservice.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{05EEC512-4615-470A-8B5E-9E179428C52D}|UserService\\UserService.csproj|d:\\mygitrepos\\mausam\\userservice\\controllers\\checkincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05EEC512-4615-470A-8B5E-9E179428C52D}|UserService\\UserService.csproj|solutionrelative:userservice\\controllers\\checkincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05EEC512-4615-470A-8B5E-9E179428C52D}|UserService2\\UserService.csproj|d:\\mygitrepos\\mausam\\userservice2\\controllers\\checkincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05EEC512-4615-470A-8B5E-9E179428C52D}|UserService2\\UserService.csproj|solutionrelative:userservice2\\controllers\\checkincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{05EEC512-4615-470A-8B5E-9E179428C52D}|UserService\\UserService.csproj|d:\\mygitrepos\\mausam\\userservice\\userservice.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{05EEC512-4615-470A-8B5E-9E179428C52D}|UserService\\UserService.csproj|solutionrelative:userservice\\userservice.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05EEC512-4615-470A-8B5E-9E179428C52D}|UserService2\\UserService.csproj|d:\\mygitrepos\\mausam\\userservice2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05EEC512-4615-470A-8B5E-9E179428C52D}|UserService2\\UserService.csproj|solutionrelative:userservice2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05EEC512-4615-470A-8B5E-9E179428C52D}|UserService2\\UserService.csproj|d:\\mygitrepos\\mausam\\userservice2\\userservice.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{05EEC512-4615-470A-8B5E-9E179428C52D}|UserService2\\UserService.csproj|solutionrelative:userservice2\\userservice.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05EEC512-4615-470A-8B5E-9E179428C52D}|UserService2\\UserService.csproj|d:\\mygitrepos\\mausam\\userservice2\\userservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{05EEC512-4615-470A-8B5E-9E179428C52D}|UserService2\\UserService.csproj|solutionrelative:userservice2\\userservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05EEC512-4615-470A-8B5E-9E179428C52D}|UserService2\\UserService.csproj|d:\\mygitrepos\\mausam\\userservice2\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05EEC512-4615-470A-8B5E-9E179428C52D}|UserService2\\UserService.csproj|solutionrelative:userservice2\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05EEC512-4615-470A-8B5E-9E179428C52D}|UserService2\\UserService.csproj|d:\\mygitrepos\\mausam\\userservice2\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05EEC512-4615-470A-8B5E-9E179428C52D}|UserService2\\UserService.csproj|solutionrelative:userservice2\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{05EEC512-4615-470A-8B5E-9E179428C52D}|UserService\\UserService.csproj|d:\\mygitrepos\\mausam\\userservice\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05EEC512-4615-470A-8B5E-9E179428C52D}|UserService\\UserService.csproj|solutionrelative:userservice\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,109 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserService",
-              "DocumentMoniker": "D:\\mygitrepos\\Mausam\\UserService2\\UserService.csproj",
-              "RelativeDocumentMoniker": "UserService2\\UserService.csproj",
-              "ToolTip": "D:\\mygitrepos\\Mausam\\UserService2\\UserService.csproj",
-              "RelativeToolTip": "UserService2\\UserService.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-02-27T03:34:46.545Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\mygitrepos\\Mausam\\UserService2\\Program.cs",
-              "RelativeDocumentMoniker": "UserService2\\Program.cs",
-              "ToolTip": "D:\\mygitrepos\\Mausam\\UserService2\\Program.cs",
-              "RelativeToolTip": "UserService2\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAVAAAA",
+              "Title": "Startup.cs",
+              "DocumentMoniker": "D:\\mygitrepos\\Mausam\\UserService\\Startup.cs",
+              "RelativeDocumentMoniker": "UserService\\Startup.cs",
+              "ToolTip": "D:\\mygitrepos\\Mausam\\UserService\\Startup.cs",
+              "RelativeToolTip": "UserService\\Startup.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-27T03:28:33.279Z",
+              "WhenOpened": "2024-02-27T06:23:55.65Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\mygitrepos\\Mausam\\UserService2\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "UserService2\\Properties\\launchSettings.json",
-              "ToolTip": "D:\\mygitrepos\\Mausam\\UserService2\\Properties\\launchSettings.json",
-              "RelativeToolTip": "UserService2\\Properties\\launchSettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAvAAAA",
+              "DocumentMoniker": "D:\\mygitrepos\\Mausam\\UserService\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "UserService\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\mygitrepos\\Mausam\\UserService\\Properties\\launchSettings.json",
+              "RelativeToolTip": "UserService\\Properties\\launchSettings.json",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACIAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-02-27T03:17:24.156Z",
+              "WhenOpened": "2024-02-27T04:05:17.224Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CheckInController.cs",
-              "DocumentMoniker": "D:\\mygitrepos\\Mausam\\UserService2\\Controllers\\CheckInController.cs",
-              "RelativeDocumentMoniker": "UserService2\\Controllers\\CheckInController.cs",
-              "ToolTip": "D:\\mygitrepos\\Mausam\\UserService2\\Controllers\\CheckInController.cs",
-              "RelativeToolTip": "UserService2\\Controllers\\CheckInController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-27T03:12:50.563Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "D:\\mygitrepos\\Mausam\\UserService2\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "UserService2\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "D:\\mygitrepos\\Mausam\\UserService2\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "UserService2\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-27T03:11:45.362Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserService",
-              "DocumentMoniker": "D:\\mygitrepos\\Mausam\\UserService2\\UserService.csproj",
-              "RelativeDocumentMoniker": "UserService2\\UserService.csproj",
-              "ToolTip": "D:\\mygitrepos\\Mausam\\UserService2\\UserService.csproj",
-              "RelativeToolTip": "UserService2\\UserService.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-02-27T03:11:07.286Z",
+              "Title": "UserService.http",
+              "DocumentMoniker": "D:\\mygitrepos\\Mausam\\UserService\\UserService.http",
+              "RelativeDocumentMoniker": "UserService\\UserService.http",
+              "ToolTip": "D:\\mygitrepos\\Mausam\\UserService\\UserService.http",
+              "RelativeToolTip": "UserService\\UserService.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-02-27T03:52:42.963Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UserService.http",
-              "DocumentMoniker": "D:\\mygitrepos\\Mausam\\UserService2\\UserService.http",
-              "RelativeDocumentMoniker": "UserService2\\UserService.http",
-              "ToolTip": "D:\\mygitrepos\\Mausam\\UserService2\\UserService.http",
-              "RelativeToolTip": "UserService2\\UserService.http",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-02-27T03:09:53.148Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\mygitrepos\\Mausam\\UserService2\\Models\\User.cs",
-              "RelativeDocumentMoniker": "UserService2\\Models\\User.cs",
-              "ToolTip": "D:\\mygitrepos\\Mausam\\UserService2\\Models\\User.cs",
-              "RelativeToolTip": "UserService2\\Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
+              "Title": "CheckInController.cs",
+              "DocumentMoniker": "D:\\mygitrepos\\Mausam\\UserService\\Controllers\\CheckInController.cs",
+              "RelativeDocumentMoniker": "UserService\\Controllers\\CheckInController.cs",
+              "ToolTip": "D:\\mygitrepos\\Mausam\\UserService\\Controllers\\CheckInController.cs",
+              "RelativeToolTip": "UserService\\Controllers\\CheckInController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-27T03:11:30.702Z",
+              "WhenOpened": "2024-02-27T03:52:10.36Z",
               "EditorCaption": ""
             }
           ]
