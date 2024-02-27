@@ -1,11 +1,19 @@
-﻿using Microsoft.AspNetCore.Mvc;
-
-namespace UserService.Controllers
+﻿namespace Mausam.UserService.Controllers
 {
+    using Mausam.DataAccess;
+    using Microsoft.AspNetCore.Mvc;
+
     [ApiController]
     [Route("api/checkin")]
     public class CheckInController : ControllerBase
     {
+        private readonly MongoDbContext _dbContext;
+
+        public CheckInController(MongoDbContext dbContext)
+        {
+            _dbContext = dbContext;
+        }
+
         [HttpPost("{userId}")]
         public IActionResult CheckIn(int userId)
         {

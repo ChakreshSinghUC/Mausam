@@ -5,7 +5,7 @@
 
 # dotenv files
 .env
-
+obj/
 # User-specific files
 *.rsuser
 *.suo
@@ -81,6 +81,7 @@ StyleCopReport.xml
 *.ilk
 *.meta
 *.obj
+**/obj/
 *.iobj
 *.pch
 *.pdb

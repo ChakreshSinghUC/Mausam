@@ -10,7 +10,13 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.6" />
+    <PackageReference Include="MongoDB.Driver" Version="2.24.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Startup.cs" />
+	<Compile Include="..\..\DataAccess\*.cs" />
+	  <!-- ... (other files) -->
   </ItemGroup>
 
 </Project>

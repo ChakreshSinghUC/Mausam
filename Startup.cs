@@ -1,11 +1,13 @@
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 
 namespace Mausam
 {
+    using Microsoft.AspNetCore.Builder;
+    using Microsoft.AspNetCore.Hosting;
+    using Microsoft.Extensions.Configuration;
+    using Microsoft.Extensions.DependencyInjection;
+    using Microsoft.Extensions.Hosting;
+    using Mausam.DataAccess;
+
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -18,6 +20,13 @@ namespace Mausam
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            //database
+            services.AddSingleton<MongoDbContext>(sp =>
+            {
+                var configuration = sp.GetRequiredService<IConfiguration>();
+                return new MongoDbContext(configuration);
+            });
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
