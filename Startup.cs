@@ -9,7 +9,8 @@ namespace Mausam
     using Mausam.Services.UserService.Interfaces;
     using Mausam.Services.UserService;
     using Microsoft.AspNetCore.Identity;
-    using Microsoft.EntityFrameworkCore; // Add this namespace
+    using Microsoft.EntityFrameworkCore;
+    using AspNetCore.Identity.Mongo;
 
     public class Startup
     {
@@ -22,17 +23,15 @@ namespace Mausam
 
         public void ConfigureServices(IServiceCollection services)
         {
+            // Add configuration
+            services.Configure<MongoDbConfiguration>(Configuration.GetSection("MongoDB"));
+
             // Add MongoDB DbContext
             services.AddSingleton<MongoDbContext>(sp =>
             {
                 var configuration = sp.GetRequiredService<IConfiguration>();
                 return new MongoDbContext(configuration);
             });
-
-            // Add Identity services with MongoDB as the store
-            services.AddIdentity<IdentityUser, IdentityRole>()
-                .AddMongoDbStores<MongoDbContext>() // Use MongoDB as the store
-                .AddDefaultTokenProviders();
 
             // Configure Identity options
             services.Configure<IdentityOptions>(options =>
@@ -50,7 +49,6 @@ namespace Mausam
             // Add logging (optional)
             services.AddLogging();
         }
-
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())

@@ -7,6 +7,7 @@
     using Mausam.Services.UserService.Models;
 
     [AllowAnonymous]
+    [Route("api/users")]
     public class UserController : Controller
     {
         private readonly UserManager<IdentityUser> _userManager;

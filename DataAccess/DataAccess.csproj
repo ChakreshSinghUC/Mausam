@@ -9,7 +9,7 @@
   <ItemGroup>
     <!-- Add MongoDB.Driver package reference -->
     <PackageReference Include="Microsoft.AspNetCore.Identity.MongoDB" Version="1.0.2" />
-    <PackageReference Include="MongoDB.Driver" Version="2.24.0" />
+    <PackageReference Include="MongoDB.Driver" Version="2.24.0" /> 
     <!-- Add other package references as needed -->
   </ItemGroup>
 
