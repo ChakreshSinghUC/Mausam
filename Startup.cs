@@ -1,4 +1,3 @@
-
 namespace Mausam
 {
     using Microsoft.AspNetCore.Builder;
@@ -7,6 +6,11 @@ namespace Mausam
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
     using Mausam.DataAccess;
+    using Mausam.Services.UserService.Interfaces;
+    using Mausam.Services.UserService;
+    using Microsoft.AspNetCore.Identity;
+    using Microsoft.EntityFrameworkCore;
+    using AspNetCore.Identity.Mongo;
 
     public class Startup
     {
@@ -19,14 +23,24 @@ namespace Mausam
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            // Add configuration
+            services.Configure<MongoDbConfiguration>(Configuration.GetSection("MongoDB"));
 
-            //database
+            // Add MongoDB DbContext
             services.AddSingleton<MongoDbContext>(sp =>
             {
                 var configuration = sp.GetRequiredService<IConfiguration>();
                 return new MongoDbContext(configuration);
             });
+
+            // Add MVC with views support
+            services.AddControllersWithViews();
+
+            // Add user service
+            services.AddScoped<IUserCheckin, UserCheckin>();
+
+            // Add logging (optional)
+            services.AddLogging();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -36,12 +50,21 @@ namespace Mausam
                 app.UseDeveloperExceptionPage();
             }
 
+            // Enable HTTPS redirection (optional, for production)
+            // app.UseHttpsRedirection();
+
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers();
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            // Include the following line to enable views
+            app.UseAuthorization();
+            app.UseStaticFiles(); // Enable serving static files like images, CSS, etc.
         }
     }
 }
