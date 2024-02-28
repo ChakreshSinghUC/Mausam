@@ -33,22 +33,16 @@ namespace Mausam
                 return new MongoDbContext(configuration);
             });
 
-            // Configure Identity options
-            services.Configure<IdentityOptions>(options =>
-            {
-                options.Password.RequiredLength = 6;
-                // Configure other identity options as needed
-            });
+            // Add MVC with views support
+            services.AddControllersWithViews();
 
             // Add user service
             services.AddScoped<IUserCheckin, UserCheckin>();
 
-            // Add MVC and controllers
-            services.AddControllers();
-
             // Add logging (optional)
             services.AddLogging();
         }
+
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
@@ -64,9 +58,13 @@ namespace Mausam
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
-                    name: "api",
+                    name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            // Include the following line to enable views
+            app.UseAuthorization();
+            app.UseStaticFiles(); // Enable serving static files like images, CSS, etc.
         }
     }
 }

@@ -1,14 +1,5 @@
 @UserService_HostAddress = http://localhost:5065
 
-POST {{UserService_HostAddress}}/api/checkin/123
-Accept: application/json
-
-###
-POST {{UserService_HostAddress}}/api/checkin
-Accept: application/json
-
-###
-
 POST {{UserService_HostAddress}}/api/users/register
 Content-Type: application/json
 Accept: application/json

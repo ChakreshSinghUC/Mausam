@@ -11,7 +11,6 @@
 	<ItemGroup>
 		<PackageReference Include="AspNetCore.Identity.Mongo" Version="8.3.3" />
 		<PackageReference Include="AspNetCore.Identity.MongoDb" Version="1.0.0-rc3" />
-		<PackageReference Include="Microsoft.AspNet.Identity.EntityFramework" Version="2.2.4" />
 		<PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
 		<PackageReference Include="Microsoft.AspNetCore.Identity.MongoDB" Version="1.0.2" /> 
 		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.6" />
