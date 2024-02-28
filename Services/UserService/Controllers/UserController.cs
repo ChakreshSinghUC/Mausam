@@ -1,42 +1,106 @@
 ﻿namespace Mausam.Services.UserService.Controllers
 {
+    using System.Threading.Tasks;
+    using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
-    using Mausam.Services.UserService.Interfaces;
+    using Microsoft.AspNetCore.Authorization;
     using Mausam.Services.UserService.Models;
 
-    [ApiController]
-    [Route("api/users")]
-    public class UserController : ControllerBase
+    [AllowAnonymous]
+    public class UserController : Controller
     {
-        private readonly IUserCheckin _userService;
+        private readonly UserManager<IdentityUser> _userManager;
+        private readonly SignInManager<IdentityUser> _signInManager;
 
-        public UserController(IUserCheckin userService)
+        public UserController(UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager)
         {
-            _userService = userService;
+            _userManager = userManager;
+            _signInManager = signInManager;
         }
 
         [HttpPost("register")]
-        public IActionResult Register([FromBody] UserRegistrationModel model)
+        public async Task<IActionResult> Register([FromBody] UserRegistrationModel model)
         {
-            return Ok("Registration successful");
+            if (ModelState.IsValid)
+            {
+                var user = new IdentityUser { UserName = model.UserName, PasswordHash = model.LoginPassword };
+                var result = await _userManager.CreateAsync(user, model.LoginPassword);
+
+                if (result.Succeeded)
+                {
+                    await _signInManager.SignInAsync(user, isPersistent: false);
+                    return Ok("Registration and login successful");
+                }
+
+                foreach (var error in result.Errors)
+                {
+                    ModelState.AddModelError(string.Empty, error.Description);
+                }
+            }
+
+            return BadRequest(ModelState);
         }
 
-        [HttpPost("login")]
-        public IActionResult Login([FromBody] UserLoginModel model)
+        [HttpPost]
+        public IActionResult Index()
         {
-            return Ok("Login successful");
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Index(UserLoginModel model, string returnUrl)
+        {
+            if (ModelState.IsValid)
+            {
+                var result = await _signInManager.PasswordSignInAsync(model.Username, model.LoginPassword, false, lockoutOnFailure: false);
+
+                if (result.Succeeded)
+                {
+                    // Redirect to the returnUrl or a default page
+                    return RedirectToLocal(returnUrl);
+                }
+
+                ModelState.AddModelError(string.Empty, "Invalid login attempt.");
+            }
+
+            return View(model);
+        }
+
+        private IActionResult RedirectToLocal(string returnUrl)
+        {
+            if (Url.IsLocalUrl(returnUrl))
+            {
+                return Redirect(returnUrl);
+            }
+            return RedirectToAction(nameof(Index));
+        }
+
+        [HttpPost("api/users/login")]
+        public IActionResult Login()
+        {
+            return View("Login");
+        }
+
+        [HttpPost("api/users/process-login")]
+        public IActionResult ProcessLogin()
+        {
+            // Perform login logic
+            // For now, just return a success message
+            return Ok(new { Message = "ProcessLogin successful" });
         }
 
         [HttpPost("forgot-password")]
         public IActionResult ForgotPassword([FromBody] PasswordResetModel model)
         {
-            return Ok("ForgotPassword successful");
+            // Implement password reset logic
+            return Ok(new { Message = "ForgotPassword successful" });
         }
 
         [HttpPost("google-login")]
         public IActionResult GoogleLogin([FromBody] GoogleLoginModel model)
         {
-            return Ok("GoogleLogin successful");
+            // Implement Google login logic
+            return Ok(new { Message = "GoogleLogin successful" });
         }
     }
 }

@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+<h2>Login</h2>
+
+<form method="post" action="/api/users/login">
+    <label for="loginIdentifier">Username or Email:</label>
+    <input type="text" id="loginIdentifier" name="loginIdentifier" required>
+
+    <label for="loginPassword">Password:</label>
+    <input type="password" id="loginPassword" name="loginPassword" required>
+
+    <button type="submit">Login</button>
+</form>

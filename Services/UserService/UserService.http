@@ -4,7 +4,7 @@ POST {{UserService_HostAddress}}/api/checkin/123
 Accept: application/json
 
 ###
-GET {{UserService_HostAddress}}/api/checkin
+POST {{UserService_HostAddress}}/api/checkin
 Accept: application/json
 
 ###
